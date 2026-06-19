@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife - Mobile-First Responsive Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="flex items-center justify-between p-4 md:p-6 max-w-7xl mx-auto">
+            <div class="text-2xl md:text-3xl font-bold text-blue-600">FitLife</div>
+            <button id="menu-toggle" class="md:hidden text-gray-600">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+            <div id="nav-menu" class="hidden md:flex gap-4 md:gap-8 absolute md:relative top-16 md:top-0 left-0 right-0 md:left-auto md:right-auto bg-white md:bg-transparent flex-col md:flex-row p-4 md:p-0">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+                <a href="#programs" class="text-gray-700 hover:text-blue-600 font-medium">Programs</a>
+                <a href="#trainers" class="text-gray-700 hover:text-blue-600 font-medium">Trainers</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-12 md:py-24 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-4">Welcome to FitLife</h1>
+            <p class="text-lg md:text-xl mb-8">Transform Your Body, Transform Your Life</p>
+            <button class="bg-white text-blue-600 font-bold py-3 px-8 rounded-lg hover:bg-gray-100 transition">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="programs" class="py-12 md:py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">💪</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Strength Training</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Build muscle and increase your strength with our professional training programs designed for all levels.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🧘</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Yoga & Flexibility</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Improve your flexibility, balance, and mental well-being with our certified yoga instructors.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition">
+                    <div class="text-4xl mb-4">🏃</div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Cardio & Stamina</h3>
+                    <p class="text-gray-600 text-sm md:text-base">Enhance your cardiovascular health and endurance with our dynamic cardio workout sessions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="bg-gray-100 py-12 md:py-24 px-4">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Our Professional Trainers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Trainer 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="bg-gradient-to-r from-blue-500 to-blue-700 h-40"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">John Smith</h3>
+                        <p class="text-blue-600 font-semibold mb-3">Strength Coach</p>
+                        <p class="text-gray-600 text-sm">15+ years of experience in strength training and fitness coaching.</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="bg-gradient-to-r from-green-500 to-green-700 h-40"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Sarah Williams</h3>
+                        <p class="text-green-600 font-semibold mb-3">Yoga Instructor</p>
+                        <p class="text-gray-600 text-sm">Certified yoga instructor specializing in flexibility and wellness.</p>
+                    </div>
+                </div>
+
+                <!-- Trainer 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition">
+                    <div class="bg-gradient-to-r from-red-500 to-red-700 h-40"></div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Mike Johnson</h3>
+                        <p class="text-red-600 font-semibold mb-3">Cardio Specialist</p>
+                        <p class="text-gray-600 text-sm">Expert in cardiovascular training and endurance programs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 md:py-24 px-4">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">Get In Touch</h2>
+            <form class="bg-white rounded-lg shadow-md p-6 md:p-8" id="contact-form">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-bold mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your name">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                    <input type="email" id="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your email">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-bold mb-2">Message</label>
+                    <textarea id="message" name="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your message"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 md:py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">FitLife</h3>
+                    <p class="text-gray-400">Your journey to fitness starts here.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white">Home</a></li>
+                        <li><a href="#programs" class="hover:text-white">Programs</a></li>
+                        <li><a href="#trainers" class="hover:text-white">Trainers</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contact Info</h4>
+                    <p class="text-gray-400 mb-2">📧 info@fitlife.com</p>
+                    <p class="text-gray-400">📱 +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FitLife. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
